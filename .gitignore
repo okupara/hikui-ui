@@ -1,0 +1,9 @@
+.DS_STORE
+.DS_Store
+.chrome
+.firefox
+
+# npm assets
+node_modules
+npm-debug.log
+package-lock.json

@@ -1,0 +1,11 @@
+{
+  "name": "@okupara/hikui-ui",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "workspaces": [
+    "packages/*",
+    "projects/*"
+  ]
+}

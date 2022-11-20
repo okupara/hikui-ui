@@ -3,9 +3,19 @@
   "version": "0.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "tsc:select": "npm run tsc -w=@hikui-ui/select",
+    "eslint": "eslint ./packages/** --ext .ts"
+  },
   "workspaces": [
     "packages/*",
     "projects/*"
-  ]
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-lit-a11y": "^2.3.0",
+    "typescript": "^4.6.4"
+  }
 }

@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "tsc": "tsc"
   },
   "dependencies": {
     "lit": "^2.4.0"

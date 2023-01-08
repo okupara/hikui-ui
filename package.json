@@ -4,7 +4,6 @@
   "description": "",
   "private": true,
   "scripts": {
-    "tsc:select": "npm run tsc -w=@hikui-ui/select",
     "eslint": "eslint ./packages/** --ext .ts",
     "format:check": "prettier . --check",
     "format": "prettier . --write",

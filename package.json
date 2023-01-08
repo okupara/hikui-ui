@@ -7,7 +7,8 @@
     "tsc:select": "npm run tsc -w=@hikui-ui/select",
     "eslint": "eslint ./packages/** --ext .ts",
     "format:check": "prettier . --check",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "web:dev": "npm run dev -w=@hikui-ui/web"
   },
   "workspaces": [
     "packages/*",

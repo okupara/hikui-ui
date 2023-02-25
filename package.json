@@ -10,7 +10,7 @@
     "web:dev": "npm run dev -w=@hikui-ui/web"
   },
   "workspaces": [
-    "packages/*",
+    "packages/**/*",
     "projects/*"
   ],
   "devDependencies": {

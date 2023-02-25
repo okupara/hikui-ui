@@ -1,3 +1,4 @@
+import { button } from "./button";
 // import "./style.css";
 // import typescriptLogo from "./typescript.svg";
 // import { setupCounter } from "./counter";
@@ -21,3 +22,8 @@
 // `;
 
 // setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+
+const buttons = window.document.querySelectorAll("[data-part=button]");
+console.log(button);
+buttons.forEach((b) => (b.className = button()));
+export {};

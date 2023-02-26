@@ -7,6 +7,7 @@
     "eslint": "eslint ./packages/** --ext .ts",
     "format:check": "prettier . --check",
     "format": "prettier . --write",
+    "build:css": "npm run build -w=@hikui-ui/css",
     "css:dev": "npm run dev -w=@hikui-ui/css",
     "web:dev": "npm run dev -w=@hikui-ui/web"
   },

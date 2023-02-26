@@ -1,23 +1,23 @@
 {
   "name": "@hikui-ui/css",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.lib.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./index.cjs"
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "rimraf ./dist && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

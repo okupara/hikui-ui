@@ -7,10 +7,11 @@
     "eslint": "eslint ./packages/** --ext .ts",
     "format:check": "prettier . --check",
     "format": "prettier . --write",
+    "css:dev": "npm run dev -w=@hikui-ui/css",
     "web:dev": "npm run dev -w=@hikui-ui/web"
   },
   "workspaces": [
-    "packages/*",
+    "packages/**/*",
     "projects/*"
   ],
   "devDependencies": {

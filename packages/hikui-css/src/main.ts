@@ -25,5 +25,5 @@ import { button } from "./button";
 
 const buttons = window.document.querySelectorAll("[data-part=button]");
 console.log(button);
-buttons.forEach((b) => (b.className = button()));
+buttons.forEach((b) => (b.className = button({ size: "lg" })));
 export {};

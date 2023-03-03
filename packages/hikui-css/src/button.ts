@@ -1,5 +1,23 @@
 import { tv } from "tailwind-variants";
 
 export const button = tv({
-  base: `bg-indigo-400 text-white`
+  base: `rounded-full
+  font-bold
+  hover:bg-indigo-400
+  focus:bg-indigo-100 focus:ring-4 focus:ring-indigo-500 focus:text-indigo-700
+  `,
+  variants: {
+    size: {
+      md: "py-2 px-4 text-base",
+      lg: "py-4 px-6 text-lg",
+    },
+    shape: {
+      solid: "bg-indigo-500 text-white ",
+      outlined: "bg-white text-indigo-700 border-2 border-indigo-700",
+    },
+  },
+  defaultVariants: {
+    size: "md",
+    shape: "solid",
+  },
 });

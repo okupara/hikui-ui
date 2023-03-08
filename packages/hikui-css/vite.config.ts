@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [dts(dtsOptions)],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"),
+      entry: resolve(__dirname, "src/lib/index.ts"),
       name: "hikui-ui-css",
       fileName: "index",
       formats: ["es", "cjs"],

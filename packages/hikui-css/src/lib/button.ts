@@ -3,8 +3,8 @@ import { tv } from "tailwind-variants";
 export const button = tv({
   base: `rounded-full
   font-bold
-  hover:bg-indigo-400
-  focus:bg-indigo-100 focus:ring-4 focus:ring-indigo-500 focus:text-indigo-700
+  hover:bg-teal-400
+  focus:bg-teal-100 focus:ring-4 focus:ring-teal-500 focus:text-teal-700
   `,
   variants: {
     size: {
@@ -12,8 +12,8 @@ export const button = tv({
       lg: "py-4 px-6 text-lg",
     },
     shape: {
-      solid: "bg-indigo-500 text-white ",
-      outlined: "bg-white text-indigo-700 border-2 border-indigo-700",
+      solid: "bg-teal-500 text-white",
+      outlined: "bg-white text-teal-700 border-2 border-teal-700",
     },
   },
   defaultVariants: {

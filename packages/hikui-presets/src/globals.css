@@ -4,6 +4,18 @@
 
 @layer base {
   :root {
+    /* <-- hikui-ui custom values */
+    --subtext: 198 27% 43%;
+
+    --gray-mid: 196 19% 55%;
+
+    --critical-main: 348 81% 47%;
+    --critical-mid: 350 89% 60%;
+    --critical-light: 353 96% 90%;
+    --critical-background: 356 100% 97%;
+
+    /* end --> */
+
     --background: 0 0% 100%;
     --foreground: 197 45% 14%;
 
@@ -13,24 +25,27 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
 
-    --primary: 193 82% 31%;
+    --primary: 193 86% 33%;
     --primary-foreground: 210 20% 98%;
 
     --secondary: 194 16% 43%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    /* --muted-foreground: 220 8.9% 46.1%; */
+    --muted-foreground: var(--subtext);
 
     --accent: 191 44% 95%;
     --accent-foreground: 199 21% 40%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* --destructive: 0 84.2% 60.2%; */
+    --destructive: var(--critical-main);
     --destructive-foreground: 210 20% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
+    /* --ring: 224 71.4% 4.1%; */
+    --ring: var(--foreground);
 
     --radius: 0.5rem;
   }

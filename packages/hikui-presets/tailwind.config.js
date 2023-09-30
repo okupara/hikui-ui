@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -51,6 +51,18 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      spacing: {
+        "level-0": "0px",
+        "level-1": "theme('spacing.1')",
+        "level-2": "theme('spacing.2')",
+        "level-3": "theme('spacing.3')",
+        "level-4": "theme('spacing.4')",
+        "level-5": "theme('spacing.6')",
+        "level-6": "theme('spacing.8')",
+        "level-7": "theme('spacing.12')",
+        "level-8": "theme('spacing.16')",
+        "level-9": "theme('spacing.20')",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -73,4 +85,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

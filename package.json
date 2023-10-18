@@ -8,7 +8,7 @@
     "format:check": "prettier . --check",
     "format": "prettier . --write",
     "build:css": "npm run build -w=@hikui-ui/css",
-    "presets:dev": "npm run storybook -w=@hikui-ui/presets"
+    "inuiu:dev": "npm run storybook -w=@hikui-ui/inuiu"
   },
   "workspaces": [
     "packages/**/*",

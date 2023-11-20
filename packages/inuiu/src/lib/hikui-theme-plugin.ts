@@ -35,6 +35,13 @@ export const hikuiThemePlugin = plugin(
     });
 
     addBase({
+      ":root": {
+        "--keyobject": "var(--gray-mid)",
+        "--keyobject-primary": "191 92% 39%",
+      },
+    });
+
+    addBase({
       "*": {
         "@apply border-border": {},
       },
@@ -89,6 +96,10 @@ export const hikuiThemePlugin = plugin(
           card: {
             DEFAULT: "hsl(var(--card))",
             foreground: "hsl(var(--card-foreground))",
+          },
+          keyobject: {
+            DEFAULT: "hsl(var(--keyobject))",
+            primary: "hsl(var(--keyobject-primary))",
           },
         },
         spacing: {
